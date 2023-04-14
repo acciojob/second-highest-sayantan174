@@ -9,9 +9,19 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
-			
-		}
+	//Write your code here
+	let highest = Number.MIN_VALUE
+	arr.forEach((e)=> {
+		if(highest<e)
+			highest=e;
+	});
+	let secondHighest=Number.MIN_VALUE
+	arr.forEach((e)=> {
+		if(secondHighest<e && e!=highest)
+			secondHighest=e
+	})
+	return secondHighest
+	}
 
 		function Main() {
 			var n = prompt("Enter the number of elements");
