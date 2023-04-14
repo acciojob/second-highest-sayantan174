@@ -12,6 +12,14 @@
 	//Write your code here
 			if(arr.length==0 || arr.length==1)
 return -Infinity
+			let flag=0
+let firstElemnt=arr[0]
+arr.forEach((e)=> {
+	if(firstElemnt!=e)
+		flag=1
+})
+if(flag==1)
+return -Infinity
 	let highest = Number.MIN_VALUE
 	arr.forEach((e)=> { 
 		if(highest<e)
