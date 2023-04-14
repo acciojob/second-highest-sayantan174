@@ -10,6 +10,8 @@
 	<script>
 		function secondHighest(arr) { 
 	//Write your code here
+			if(arr.length==0 || arr.length==1)
+return -Infinity
 	let highest = Number.MIN_VALUE
 	arr.forEach((e)=> { 
 		if(highest<e)
